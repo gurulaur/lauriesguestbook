@@ -1,0 +1,191 @@
+/* base CSS */
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: #002447;
+  background: #FFFFFF;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 70%;
+}
+
+a {
+  color: #006666;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  text-decoration: none;
+}
+a:visited {
+    color: #004747;
+}
+a:hover, a:focus {
+    color: #66A3A3;
+    text-decoration: underline;
+}
+
+abbr {
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.01em;
+}
+
+header {
+  /*height: 230px;*/
+  padding: 20px 20px 20px 0;
+  background: #0066CC 50%; /* old IE fallback */
+  text-align: left;
+}
+nav {
+  text-align: left;
+  position: absolute;
+  top: 11px;
+  left: 220px;
+  font-size: 1.3em;
+  overflow: visible;
+  background: transparent;
+}
+
+h1, h2 {
+  margin: 0 20px;
+  color: #fff;
+  font-weight: normal;
+}
+h1 {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 2em;
+}
+h2 {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: none;
+  color: rgba(255,255,255,0.6);
+  font-size: 1.3em;
+  font-style: italic;
+}
+h3 {
+  margin: 0 0 0 0;
+  color: #2e484c;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 1.8em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+p {
+  margin: 0.75em 0;
+  line-height: 2;
+}
+
+input:focus, textarea:focus
+{
+background-color:#FFCCCC;
+}
+
+
+/* page-wrapper */
+.page-wrapper {
+  position: relative;
+}
+
+/* summary, main-content */
+.summary, .main-content {
+  width: 65%;
+  margin: 0 40px;
+}
+
+.summary {
+  padding-top: 2em;
+}
+
+
+/* navbar block links -- download HTML/CSS */
+.navbar a, .navbar a:visited {
+  position: relative;
+  display: inline-block;
+  padding: 0px 10px;
+/*  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;*/
+  color: #FFFFFF;
+  font-family: 'Julius Sans One', sans-serif;
+  text-transform: uppercase;
+}
+.navbar a:hover, .navbar a:focus {
+  z-index: 2;
+  color: #FFFFFF;
+  background: #003D7A;
+  text-decoration: none;
+}
+.navbar li {
+  display:inline;
+}
+
+
+/* sidebar base styles */
+.sidebar {
+  background: #edf4f0;
+}
+
+.sidebar a {
+  color: #607476;
+  text-decoration: none;
+}
+.sidebar a:hover, .sidebar a:focus {
+    color: #49968e;
+  }
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.sidebar li {
+  float: none;
+  width: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 10px 0 0; /* 0 10% 0 5% of total width */
+}
+
+
+/* shared sidebar styling */
+.design-selection li {
+  float: left;
+  width: 80%;
+  padding: 1.5em 10%;
+  border-top: solid 1px #d9e3dc;
+  color: #c0cac3;
+  font-style: italic;
+}
+
+
+/* select a design */
+
+.design-selection .designer-name {
+  color: #616857;
+  font-size: 0.9em;
+  font-style: normal;
+}
+
+/* sidebar styling */
+.design-selection {
+  position: absolute;
+  top: 85px;
+  right: 5px;
+  width: 25%;
+  padding: 10px;
+  margin: 0;
+  overflow: visible;
+  background: transparent;
+}
+
+
